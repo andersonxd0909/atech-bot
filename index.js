@@ -14,7 +14,7 @@ async function connectToWhatsApp() {
 
     if (!sock.authState.creds.registered) {
         await delay(5000);
-        const numeroTelefono = "51900000000"; // <-- ASEGÚRATE QUE ESTÉ TU NÚMERO
+        const numeroTelefono = "51931551811"; // <-- ASEGÚRATE QUE ESTÉ TU NÚMERO
         const code = await sock.requestPairingCode(numeroTelefono);
         console.log("TU CÓDIGO DE CONEXIÓN ES:", code);
     }
