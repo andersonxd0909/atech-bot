@@ -3,7 +3,7 @@ const pino = require("pino");
 
 async function connectToWhatsApp() {
     // 1. Configuración de sesión y versión
-    const { state, saveCreds } = await useMultiFileAuthState('auth_info');
+    const { state, saveCreds } = await useMultiFileAuthState('sesion_nueva');
     const { version } = await fetchLatestBaileysVersion();
     
     const sock = makeWASocket({
